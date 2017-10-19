@@ -1,0 +1,44 @@
+<html>
+  <head>
+	<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+	<script src="/js/scripts.js"></script>
+  </head>
+  <body>
+	<a-scene>
+	  <!-- TODO: Add exit -->
+	  <a-box position="7 .5 -7" rotation="0 0 0" color="#0000AA" height="2">
+		<a-text value="Exit---------" align="right"></a-text>
+	</a-box>
+	  <!-- TODO: Add Tshirt -->
+	  <a-box position="0 1.5 -5" height="0.5" width="0.5" depth="0.5" rotation="0 0 0" src="/img/tshirt.png" id="tshirt">
+		
+		<a-animation attribute="position" begin="mouseenter" dur="300" to="0 1.6 -5"></a-animation>
+		<a-animation attribute="position" begin="mouseleave" dur="300" to="0 1.5 -5"></a-animation>
+		<a-animation attribute="scale" begin="mouseenter" dur="300" to="1.1 1.1 1.1"></a-animation>
+		<a-animation attribute="scale" begin="mouseleave" dur="300" to="1 1 1"></a-animation>
+		<a-text value="-----The Black Tee"></a-text>
+
+	  </a-box>
+	  <!-- TODO: Add Trousers -->
+	  <a-box position="0 0.25 -5" height="0.5" width="0.5" depth="0.5" rotation="0 0 0" src="/img/jeans.jpg" id="trousers">
+		
+		<a-animation attribute="position" begin="mouseenter" dur="300" to="0 0.35 -5"></a-animation>
+		<a-animation attribute="position" begin="mouseleave" dur="300" to="0 0.25 -5"></a-animation>
+		<a-animation attribute="scale" begin="mouseenter" dur="300" to="1.1 1.1 1.1"></a-animation>
+		<a-animation attribute="scale" begin="mouseleave" dur="300" to="1 1 1"></a-animation>
+		<a-text value="-----The Classic Jort"></a-text>
+
+	  </a-box>
+
+
+	  <a-plane height="100" width="100" rotation="-90 0 0" color="#444"></a-plane>
+
+	  <a-camera>
+		<a-cursor></a-cursor>
+	  </a-camera>
+
+
+	  <a-sky color="#ECECEC"></a-sky>
+	</a-scene>
+  </body>
+</html>
